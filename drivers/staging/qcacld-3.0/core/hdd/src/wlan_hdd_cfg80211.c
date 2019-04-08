@@ -15009,7 +15009,7 @@ QDF_STATUS wlan_hdd_send_sta_authorized_event(
 		return QDF_STATUS_E_FAILURE;
 	}
 	status = nla_put(vendor_event,
-			 QCA_WLAN_VENDOR_ATTR_LINK_PROPERTIES_STA_MAC,
+			 QCA_WLAN_VENDOR_ATTR_LINK_PROPERTIES_MAC_ADDR,
 			 QDF_MAC_ADDR_SIZE, mac_addr->bytes);
 	if (status) {
 		hdd_err("STA MAC put fails");
